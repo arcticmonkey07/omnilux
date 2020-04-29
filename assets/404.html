@@ -1,0 +1,57 @@
+@@include('template/head.html', {
+"pagetitle": "404 Ошибка",
+"bodyclass": ""
+})
+
+<nav class="nav nav-catalog nav-hide">
+  @@include('template/nav.html', {
+  "profile_active": "false",
+  "basket_active": "false"
+  })
+</nav>
+@@include('template/nav-subtop.html')
+
+<div class="error-404-page-container js-menu-top-roll-up">
+  <main class="error-404-page">
+
+    <div class="breadcrumbs breadcrumbs--404">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--404" href="main.html">Главная</a>
+          <i class="icon-arrow"></i>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--404 breadcrumbs__link--active">404</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="error-404">
+      <div class="profile__header-container profile__header-container--404">
+        <button class="profile__btn-back profile__btn-back--404"><i class="icon-arrow-back"></i></button>
+        <h1 class="profile__header profile__header--404">404</h1>
+      </div>
+
+      <div class="error-404-content">
+        <div class="error-404-sub-blackout">
+          <div class="error-404-blackout">
+            <div class="error-404-container">
+              <b class="error-404__text">ошибка</b>
+              <b class="error-404__404-text">404</b>
+              <button class="error-404__btn-index">Вернуться на главную</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+</main>
+
+@@include('template/footer.html')
+</div>
+<!--@@include('template/confidence.html')-->
+@@include('template/scripts.html')
+
+</body>
+</html>

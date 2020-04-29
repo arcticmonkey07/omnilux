@@ -1,0 +1,148 @@
+// GLOBAL STYLES
+@import "global/variables";
+@import "global/font";
+@import "global/normalize";
+
+// PLUGINS STYLES
+
+@import "plugins/icomoon";
+@import "plugins/slick";
+@import "plugins/nice-select";
+@import "plugins/nouislider";
+@import "plugins/css-stars";
+
+// BLOCKS STYLE
+@import "blocks/container";
+@import "blocks/preloader";
+@import "blocks/nav";
+@import "blocks/nav-styles";
+@import "blocks/nav-types";
+@import "blocks/nav-subtop";
+@import "blocks/more-link";
+@import "blocks/lustre-item-loader";
+@import "blocks/breadcrumbs";
+@import "blocks/item-marker";
+@import "blocks/confidence";
+@import "blocks/footer";
+@import "blocks/blackout";
+
+// modals
+@import "blocks/modals/modal";
+@import "blocks/modals/modal-social";
+@import "blocks/modals/log-in-modal";
+@import "blocks/modals/register-modal";
+@import "blocks/modals/register-confirm-modal";
+@import "blocks/modals/forgot-password-modal";
+@import "blocks/modals/change-password-modal";
+@import "blocks/modals/modal-links";
+@import "blocks/modals/feedback-success-modal";
+
+// index
+@import "blocks/index/kalideo";
+@import "blocks/index/preview";
+@import "blocks/index/main";
+@import "blocks/index/sidebar";
+@import "blocks/index/collection";
+@import "blocks/index/lustre";
+@import "blocks/index/products-grid-index";
+@import "blocks/index/info";
+@import "blocks/index/design";
+
+// catalog
+@import "blocks/catalog/products-grid-catalog";
+@import "blocks/catalog/item-big";
+@import "blocks/catalog/catalog-filter";
+
+// product
+@import "blocks/product/product-page";
+@import "blocks/product/buy-one-click";
+
+// news
+@import "blocks/news/news-page";
+
+// contacts
+@import "blocks/contacts/contacts-page";
+
+// reviews
+@import "blocks/reviews/reviews-page";
+@import "blocks/reviews/leave-feedback";
+
+// profile-physical
+@import "blocks/profile/profile";
+
+// profile-physical
+@import "blocks/profile-physical/profile-physical-page";
+
+// profile-juridical
+@import "blocks/profile-juridical/profile-juridical-page";
+
+// profile-loyalty
+@import "blocks/profile-loyalty/profile-loyalty-page";
+
+// profile-orders
+@import "blocks/profile-orders/profile-orders-page";
+
+// basket
+@import "blocks/basket/basket-page";
+
+// approval
+@import "blocks/approval/approval-page";
+
+// 404
+@import "blocks/404/error-404-page";
+
+// static
+@import "blocks/static/static-page";
+
+// referral
+@import "blocks/referral";
+
+body {
+	position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: $background;
+	font-weight: 400;
+	line-height: 1.2;
+	font-size: 62.2%;
+	min-width: 320px;
+	background-color: #212121;
+	//background-color: #ccc;
+	overflow-x: hidden;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	outline: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+	opacity: 0;
+}
+
+//
+
+.links ul > li > a {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 30px;
+	color: #FFFFFF;
+}

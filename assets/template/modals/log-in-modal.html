@@ -1,0 +1,58 @@
+<div class="modal log-in-modal">
+  <form class="validate-form" action="">
+    <div class="modal-container log-in-container">
+      <h2 class="modal__header log-in__header">Вход</h2>
+
+      <div class="modal__input-container">
+        <input type="text" class="modal__input modal__input-tel" placeholder="E-mail или номер телефона" name="phone" required>
+        <h4 class="modal__input-header">E-mail или номер телефона</h4>
+      </div>
+      <div class="modal__input-container modal__input-password-container">
+        <input type="password" class="modal__input modal__input-password log-in__input-password" placeholder="Пароль или код из смс" name="password" required>
+        <h4 class="modal__input-header">Пароль или код из смс</h4>
+        <a class="log-in__input-link-forgot-password" href="#">Забыли пароль?</a>
+        <button class="modal__input-btn-show-pass"></button>
+      </div>
+
+      <label class="log-in__remember-me-container">
+        <input class="remember-me__checkbox" type="checkbox">
+        <span class="remember-me__checkbox-indicator"></span>
+        <span class="remember-me__text">Запомнить меня </span>
+      </label>
+
+    </div>
+
+    <div class="log-in__buttons-container">
+      <button class="modal__btn-submit log-in__btn-register">Зарегистрироваться</button>
+      <button class="modal__btn-submit log-in__btn-login" type="submit">Войти</button>
+    </div>
+  </form>
+
+  <div class="modal__social-container">
+    <span class="modal-social__text">Или войдите через любимую соцсеть:</span>
+    <ul class="modal-social__list">
+      <li class="modal-social__item">
+        <a href="#">
+          <i class="modal-social__icon modal-social__icon--vk"></i>
+        </a>
+      </li>
+      <li class="modal-social__item">
+        <a href="#">
+          <i class="modal-social__icon modal-social__icon--fb"></i>
+        </a>
+      </li>
+      <li class="modal-social__item">
+        <a href="#">
+          <i class="modal-social__icon modal-social__icon--twitter"></i>
+        </a>
+      </li>
+      <li class="modal-social__item">
+        <a href="#">
+          <i class="modal-social__icon modal-social__icon--google-plus"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <button class="modal__btn-close"><i class="icon-close"></i></button>
+</div>

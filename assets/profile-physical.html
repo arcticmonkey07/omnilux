@@ -1,0 +1,138 @@
+@@include('template/head.html', {
+"pagetitle": "Личный кабинет",
+"bodyclass": ""
+})
+
+<nav class="nav nav-catalog nav-hide">
+  @@include('template/nav.html', {
+  "profile_active": "true",
+  "basket_active": "false"
+  })
+</nav>
+@@include('template/nav-subtop.html')
+
+<div class="profile-physical-page-container js-menu-top-roll-up">
+  <main class="profile profile-physical-page">
+
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="main.html">Главная</a>
+          <i class="icon-arrow"></i>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--active">Личный кабинет</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="profile-content">
+      <div class="profile__header-container">
+        <button class="profile__btn-back"><i class="icon-arrow-back"></i></button>
+        <h1 class="profile__header">Личный кабинет</h1>
+      </div>
+
+      <div class="profile-container">
+        <div class="profile-sidebar">
+          <ul class="profile-sidebar__list">
+            <li class="profile-sidebar__item">
+              <a class="profile-sidebar__link profile-sidebar__link--active" href="#">Профиль</a>
+            </li>
+            <li class="profile-sidebar__item">
+              <a class="profile-sidebar__link profile-sidebar__link--circle" href="#">Мои заказы</a>
+            </li>
+            <li class="profile-sidebar__item">
+              <a class="profile-sidebar__link" href="#">Лояльность</a>
+            </li>
+            <li class="profile-sidebar__item">
+              <a class="profile-sidebar__link" href="#">Избранное</a>
+            </li>
+            <li class="profile-sidebar__item">
+              <a class="profile-sidebar__link" href="#">Сменить пароль</a>
+            </li>
+            <li class="profile-sidebar__item">
+              <a class="profile-sidebar__link" href="#">Выйти</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="profile-physical-content">
+          <form class="profile-physical-form validate-form" action="">
+            <div class="physical-form-block">
+              <h4 class="physical-form__header">Контактное лицо</h4>
+              <div class="physical-form__inputs-container">
+                <div class="physical-form__input-wrapper">
+                  <input class="physical-form__input" type="text" placeholder="Ваше имя*" name="name" required>
+                  <span class="physical-form__input-header">Ваше имя*</span>
+                </div>
+                <div class="physical-form__input-wrapper">
+                  <input class="physical-form__input" type="text" placeholder="Фамилия" name="lastName">
+                  <span class="physical-form__input-header">Фамилия</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="physical-form-block">
+              <h4 class="physical-form__header">Контакты</h4>
+              <div class="physical-form__inputs-container">
+                <div class="physical-form__input-wrapper">
+                  <input class="physical-form__input reg-email-phone" type="email" placeholder="E-mail*" name="reg_email">
+                  <span class="physical-form__input-header">E-mail*</span>
+                </div>
+                <div class="physical-form__input-wrapper">
+                  <input class="physical-form__input mask__input-tel reg-email-phone" type="tel" placeholder="Телефон*" name="reg_tel">
+                  <span class="physical-form__input-header">Телефон*</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="physical-form-block-address-container js-form-block-address-container">
+              <div class="physical-form-block js-form-block-address">
+                <div class="physical-form__input-wrapper physical-form__input-wrapper--address">
+                  <div class="physical-form__input-container">
+                    <input class="physical-form__input form__input-address-js" type="text" placeholder="Начните вводить адрес" name="address">
+                  </div>
+                  <span class="physical-form__input-header">Адрес (Город, улица, дом, квартира)</span>
+                  <button class="physical-form__btn-address js-form__add-address" type="button">+ Добавить адрес</button>
+                  <button class="physical-form__btn-address js-form__del-address" type="button">- Удалить адрес</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="physical-form-block physical-form-block--checkbox">
+              <h4 class="physical-form__header physical-form__header--subscribe">Настройки подписки</h4>
+              <span class="physical-form__subscribe-text">Я хочу получать информацию</span>
+              <div class="physical-form__checkbox-container">
+                <label class="physical-form__checkbox-wrapper">
+                  <input class="physical-form__checkbox" type="checkbox" name="info">
+                  <span class="physical-form__checkbox-indicator"></span>
+                  <span class="physical-form__checkbox-header">Информация о заказах</span>
+                </label>
+                <label class="physical-form__checkbox-wrapper">
+                  <input class="physical-form__checkbox" type="checkbox" name="news">
+                  <span class="physical-form__checkbox-indicator"></span>
+                  <span class="physical-form__checkbox-header">Новости и публикации</span>
+                </label>
+                <label class="physical-form__checkbox-wrapper">
+                  <input class="physical-form__checkbox" type="checkbox" name="discounts">
+                  <span class="physical-form__checkbox-indicator"></span>
+                  <span class="physical-form__checkbox-header">Акции и спецпредложения</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="physical-form__btn-save" type="submit">Сохранить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('template/footer.html')
+</div>
+<!--@@include('template/confidence.html')-->
+@@include('template/scripts.html')
+
+</body>
+</html>

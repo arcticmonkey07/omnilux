@@ -1,0 +1,169 @@
+@@include('template/head.html', {
+"pagetitle": "Лояльность",
+"bodyclass": ""
+})
+
+<nav class="nav nav-catalog nav-hide">
+  @@include('template/nav.html', {
+  "profile_active": "true",
+  "basket_active": "false"
+  })
+</nav>
+@@include('template/nav-subtop.html')
+
+<main class="profile profile-loyalty-page js-menu-top-roll-up">
+
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="main.html">Главная</a>
+        <i class="icon-arrow"></i>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--active">Личный кабинет</a>
+      </li>
+    </ul>
+  </div>
+
+  <section class="profile-content">
+    <div class="profile__header-container">
+      <button class="profile__btn-back"><i class="icon-arrow-back"></i></button>
+      <h1 class="profile__header">Личный кабинет</h1>
+    </div>
+
+    <div class="profile-container">
+      <div class="profile-sidebar">
+        <ul class="profile-sidebar__list">
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link" href="#">Профиль</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link profile-sidebar__link--circle" href="#">Мои заказы</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link profile-sidebar__link--active" href="#">Лояльность</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link" href="#">Избранное</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link" href="#">Сменить пароль</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link" href="#">Выйти</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="profile-loyalty-container">
+        <div class="profile-loyalty-content-container">
+          <div class="profile-loyalty-content">
+            <h3 class="loyalty-content__header">Программа лояльности</h3>
+            <p class="loyalty-content__text">Рекламоноситель неестественно экономит креативный контент. Тем не менее, точечное воздействие создает эмпирический PR, отвоевывая свою долю рынка. Согласно предыдущему, эволюция мерчандайзинга по-прежнему востребована. Молодежная аудитория директивно охватывает тактический рейтинг. Контент, отбрасывая подробности, спонтанно тормозит тактический пул лояльных изданий.
+            </p>
+            <h3 class="loyalty-content__header">Ваша реферальная ссылка:</h3>
+            <div class="loyalty-content__link-container">
+              <span class="loyalty-content-link__tooltip">Ссылка скопирована в буфер</span>
+              <span class="loyalty-content__link">https://eurogalant.ru/?uid=289e891298 <i class="loyalty-content__link-icon icon-copy"></i></span>
+            </div>
+            <h3 class="loyalty-content__header">Поделиться в соцсетях:</h3>
+            <ul class="modal-social__list">
+              <li class="modal-social__item">
+                <a href="#">
+                  <i class="modal-social__icon modal-social__icon--vk"></i>
+                </a>
+              </li>
+              <li class="modal-social__item">
+                <a href="#">
+                  <i class="modal-social__icon modal-social__icon--fb"></i>
+                </a>
+              </li>
+              <li class="modal-social__item">
+                <a href="#">
+                  <i class="modal-social__icon modal-social__icon--twitter"></i>
+                </a>
+              </li>
+              <li class="modal-social__item">
+                <a href="#">
+                  <i class="modal-social__icon modal-social__icon--google-plus"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="profile__right-sidebar">
+
+            <div class="right-sidebar__discount">
+              <div class="sidebar-discount__container">
+                <b class="sidebar-discount__number">10%</b>
+                <p class="sidebar-discount__text">Ваша партнерская скидка</p>
+              </div>
+              <div class="sidebar-discount__price-list-container">
+                <a href="#"></a><i class="price-list-link-icon icon-download-price-list"></i>
+                <div class="sidebar-discount__price-list-link-container">
+                  <a class="sidebar-discount__price-list-link" href="#">Скачать оптовый прайс-лист</a>
+                  <span class="sidebar-discount__price-list-size">XLS, 1.5 Mb</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-sidebar__manager">
+              <div class="right-sidebar__manager-block">
+                <h4 class="sidebar-manager__header">Ваш персональный менеджер</h4>
+                <!--	тут картинки можно ставить любого размера, только соотношение сторон должно быть 1к1-->
+                <img class="sidebar-manager__img" src="./img/review/avatar-03.png" width="120" height="120" alt="manager-img">
+              </div>
+              <div class="right-sidebar__manager-block">
+                <b class="sidebar-manager__name">Вероника Перельман</b>
+                <span class="sidebar-manager__post">Ведущий специалист оптового отдела</span>
+                <div class="right-sidebar__manager-contacts">
+                  <a class="sidebar-manager__tel" href="tel:+74956443414">8&nbsp;(495)&nbsp;644&nbsp;-34&nbsp;-14</a>
+                  <a class="sidebar-manager__email" href="mailto:veronika@eurogalant.ru">veronika@eurogalant.ru</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="profile-loyalty__discount-system">
+          <h4 class="discount-system__header">Система скидок</h4>
+          <div class="discount-system__circles-container">
+            <div class="discount-system__circle-item">
+              <div class="discount-system__circle">
+                <span class="discount-system__circle-number">5%</span>
+              </div>
+              <span class="discount-system__circle-text discount-system__circle-text--yellow">Покупок по вашей ссылке на 10 000 р.</span>
+              <span class="discount-system__circle-text">Осталось покупок на&nbsp;1&nbsp;200&nbsp;р.</span>
+            </div>
+
+            <div class="discount-system__circle-item">
+              <div class="discount-system__circle discount-system__circle--no-border">
+                <span class="discount-system__circle-number">10%</span>
+              </div>
+              <span class="discount-system__circle-text discount-system__circle-text--yellow">Покупок на 50 000 р. по вашей ссылке</span>
+              <span class="discount-system__circle-text">Сначала получите предыдущий уровень скидки</span>
+            </div>
+
+            <div class="discount-system__circle-item">
+              <div class="discount-system__circle discount-system__circle--no-border">
+                <span class="discount-system__circle-number discount-system__circle-number--bold">15%</span>
+              </div>
+              <span class="discount-system__circle-text discount-system__circle-text--yellow">Покупок на 100 000 р. по вашей ссылке</span>
+              <span class="discount-system__circle-text">Сначала получите предыдущий уровень скидки</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include('template/footer.html')
+<!--@@include('template/confidence.html')-->
+@@include('template/scripts.html')
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<div class="modal leave-feedback-modal">
+  <form class="leave-feedback__form feedback-form" action="">
+    <div class="modal-container">
+      <h2 class="modal__header">Оставить отзыв</h2>
+      <p class="modal__text">Будет здорово, если вы оставите отзыв — это поможет другим покупателям определиться с выбором</p>
+
+      <div class="leave-feedback__rating-container">
+        <div class="leave-feedback__rating-header">Общая оценка</div>
+        <div class="feedback-select">
+          <select id="leave-feedback__rating" name="leave_review_rating" required>
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="modal__input-container">
+        <textarea class="modal__input modal__textarea" placeholder="Достоинства" name="advantages" data-autoresize></textarea>
+        <div id="text_area_div"></div>
+        <h4 class="modal__input-header">Достоинства</h4>
+      </div>
+      <div class="modal__input-container">
+        <textarea class="modal__input modal__textarea" placeholder="Недостатки" name="disadvantages" data-autoresize></textarea>
+        <h4 class="modal__input-header">Недостатки</h4>
+      </div>
+      <div class="modal__input-container">
+        <textarea class="modal__input modal__textarea" placeholder="Комментарий" name="comment" data-autoresize></textarea>
+        <h4 class="modal__input-header">Комментарий</h4>
+      </div>
+
+    </div>
+
+    <button class="modal__btn-submit leave-feedback__btn-send" type="submit">Отправить</button>
+  </form>
+
+  <button class="modal__btn-close"><i class="icon-close"></i></button>
+</div>

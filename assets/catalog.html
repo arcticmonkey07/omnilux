@@ -1,0 +1,607 @@
+@@include('template/head.html', {
+"pagetitle": "Каталог",
+"bodyclass": ""
+})
+
+<nav class="nav nav-catalog">
+  @@include('template/nav.html', {
+  "profile_active": "false",
+  "basket_active": "false"
+  })
+</nav>
+
+<nav class="nav-subtop-catalog">
+  @@include('template/nav-subtop.html')
+</nav>
+
+@@include('template/modals/modal-links.html')
+@@include('template/modals/log-in-modal.html')
+@@include('template/modals/register-modal.html')
+@@include('template/modals/register-confirm-modal.html')
+@@include('template/modals/forgot-password-modal.html')
+@@include('template/modals/change-password-modal.html')
+
+<nav class="nav-styles nav-styles-catalog">
+  <select class="nav-styles__select" name="styles-select">
+    <option value="Все">Все</option>
+    <option value="Кантри">Кантри</option>
+    <option value="Классика">Классика</option>
+    <option value="Лофт">Лофт</option>
+    <option value="Модерн">Модерн</option>
+    <option value="Тиффани">Тиффани</option>
+    <option value="LED">LED</option>
+  </select>
+  <ul class="nav-styles__list">
+    <li class="nav-styles__item">
+      <a class="nav-styles__link" href="#">Все</a>
+    </li>
+    <li class="nav-styles__item">
+      <a class="nav-styles__link" href="#">Кантри</a>
+    </li>
+    <li class="nav-styles__item">
+      <a class="nav-styles__link nav-styles__link--active" href="#">Классика</a>
+    </li>
+    <li class="nav-styles__item">
+      <a class="nav-styles__link" href="#">Лофт</a>
+    </li>
+    <li class="nav-styles__item">
+      <a class="nav-styles__link" href="#">Модерн</a>
+    </li>
+    <li class="nav-styles__item">
+      <a class="nav-styles__link" href="#">Тиффани</a>
+    </li>
+    <li class="nav-styles__item">
+      <a class="nav-styles__link" href="#">LED</a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="nav-types nav-types-catalog">
+  <ul class="nav-types__list">
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link nav-types__link--active">Все</a>
+    </li>
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link">Люстры</a>
+    </li>
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link">Люстры потолочные</a>
+    </li>
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link">Люстры подвесные</a>
+    </li>
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link">Бра</a>
+    </li>
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link">Подвесы</a>
+    </li>
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link">Настольные лампы</a>
+    </li>
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link">Споты</a>
+    </li>
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link">Торшеры</a>
+    </li>
+    <li class="nav-types__item">
+      <a href="" class="nav-types__link">Лампочки</a>
+    </li>
+  </ul>
+  <div class="nav-types__filter-btn-wrapper">
+    <button class="nav-types__filter-btn">
+      <span class="filter-btn-line"></span>
+      <span class="filter-btn-line"></span>
+      <span class="filter-btn-line"></span>
+    </button>
+  </div>
+</nav>
+
+<section class="products-grid-catalog add_blackout">
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <div class="item__markers-wrapper">
+      <div class="item__marker item__marker--new">new</div>
+      <div class="item__marker item__marker--hot">hot</div>
+    </div>
+    <!--	тут картинки можно ставить любого размера, только соотношение сторон должно быть 1к1-->
+    <img src="./img/products-grid/1-1.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/21.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/2.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/3.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/4.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/5.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/22.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <div class="item__markers-wrapper">
+      <div class="item__marker item__marker--new">new</div>
+    </div>
+    <img src="./img/products-grid/23.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/6.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/7.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/8.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/9.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/10.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/24.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/12.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/13.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/14.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/15.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/16.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/17.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/18.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/19.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/20.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/25.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/1-1.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/21.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/2.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/3.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/4.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/5.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/22.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/23.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/6.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/7.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/8.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/9.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/10.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/24.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/12.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/13.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/14.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/15.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/16.jpg" alt="lustre">
+  </div>
+  <div class="grid-catalog__item grid-catalog__item--width">
+    <img src="./img/products-grid/17.jpg" alt="lustre">
+  </div>
+  <div class="lustre-item__preload-container grid-catalog__item--width">
+    <div class="lustre-item__preload-wrapper">
+      <div class="lustre-item__preload">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div class="lustre-item__preload-container grid-catalog__item--width">
+    <div class="lustre-item__preload-wrapper">
+      <div class="lustre-item__preload">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div class="lustre-item__preload-container grid-catalog__item--width">
+    <div class="lustre-item__preload-wrapper">
+      <div class="lustre-item__preload">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div class="grid-catalog__item--width grid-catalog__item-more-container">
+    <button class="grid-catalog__item-more">
+      Показать ещё
+      <span class="grid-catalog__item-more-plus">+</span>
+    </button>
+  </div>
+<!--  item-big-->
+
+
+  <div class="products-grid__filter-container">
+    <div class="products-grid__filter catalog-filter">
+      <div class="catalog-filter-container">
+        <h3 class="catalog-filter__header">Подбор параметров</h3>
+        <p class="catalog-filter__item-find">Найдено <span class="catalog-filter__item-find-num">2 317</span> товаров</p>
+        <p class="catalog-filter__text">Фильтровать по</p>
+
+        <ul class="catalog-filter__list">
+          <li class="catalog-filter__item catalog-filter__item--sort">
+            <a class="catalog-filter__link catalog-filter__link--sort">Сортировать по</a>
+            <span class="catalog-filter__text-param">(Убывание цены)<i class="icon-close"></i></span>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link catalog-filter__link--retail-price" href="#">Розничная цена</a>
+            <span class="catalog-filter__text-param">(55 000 — 150 000)<i class="icon-close"></i></span>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Материал основания</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link catalog-filter__link--material" href="#">Материал декора</a>
+            <span class="catalog-filter__text-param">(Металл)<i class="icon-close"></i></span>
+            <span class="catalog-filter__text-param">(Пластик)<i class="icon-close"></i></span>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Количество ламп</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Общая мощность, Вт</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Тип ламп</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Производитель</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Вес светильника</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Тип светильника</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Высота светильника</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Длинна светильника</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Ширина светильника</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Лампы в комплекте</a>
+          </li>
+          <li class="catalog-filter__item">
+            <a class="catalog-filter__link" href="#">Ширина светильника</a>
+          </li>
+        </ul>
+      </div>
+      <div class="catalog-filter__btn-wrapper">
+        <button class="catalog-filter__btn catalog-filter__btn-show">Показать</button>
+        <button class="catalog-filter__btn catalog-filter__btn-reset">Сбросить</button>
+      </div>
+    </div>
+    <div class="products-grid__filter-material catalog-filter-material">
+      <ul class="catalog-filter-material__list">
+        <li>
+          <a class="catalog-filter-material__link" href="#">Все</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Акрил</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Веревка</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Веревка</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Дерево + стекло</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Камень</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Керамика</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Композит</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Кремовый</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Металл</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Металл + керамика</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Металл + нитка</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Металл + пластик</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Металл + стекло</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Пластик</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Пластик + ткань</a>
+        </li>
+        <li>
+          <a class="catalog-filter-material__link" href="#">Пластик + хрусталь</a>
+        </li>
+      </ul>
+    </div>
+    <div class="products-grid__filter-price catalog-filter-price">
+      <div class="catalog-filter-price-container">
+        <div id="catalog-filter-price-slider"></div>
+        <div class="catalog-filter-price__wrapper">
+          <span class="catalog-filter-price__number">0</span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__number">25 000</span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__number">50 000</span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__number">75 000</span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__number">100 000</span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__number">125 000</span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__line"></span>
+          <span class="catalog-filter-price__number">150 000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="item-big-list-container">
+
+  <div class="grid-catalog__item-big item-big" >
+    <div class="item-big__slide item-big__wrapper">
+      <div class="item-big__img">
+        <div class="item__markers-wrapper">
+          <div class="item__marker item__marker--new">new</div>
+          <div class="item__marker item__marker--hot">hot</div>
+        </div>
+        <button class="item-big__close-btn">
+          <span class="icon-close"></span>
+        </button>
+        <div class="item-big__slider">
+          <div class="item-big__slide">
+            <!--	тут картинки можно ставить любого размера, только соотношение сторон должно быть 1к1-->
+            <img src="./img/lustre-grid/14-big.jpg" alt="item-big">
+          </div>
+          <div class="item-big__slide">
+            <img src="./img/lustre-grid/14-big.jpg" alt="item-big">
+          </div>
+          <div class="item-big__slide">
+            <img src="./img/lustre-grid/14-big.jpg" alt="item-big">
+          </div>
+        </div>
+        <div class="item-big__dots-wrapper"></div>
+        <div class="item-big__arrows-wrapper">
+          <button class="item-big__arrow item-big__arrow-left icon-slider-right-catalog"></button>
+          <button class="item-big__arrow item-big__arrow-right icon-slider-right-catalog"></button>
+        </div>
+      </div>
+
+      <div class="item-big__buttons">
+        <a class="item-big__link item-big__link-cart" href="basket.html">В корзину</a>
+        <a class="item-big__link item-big__link-more" href="product.html">Подробнее<span class="icon-arrow"></span></a>
+      </div>
+      <div class="item-big__info">
+        <table class="item-big__table">
+          <thead>
+          <tr>
+            <td class="item-big-table__serial">OML-85507-12</td>
+            <td class="item-big-table__price-crossed">25 640 ₽</td>
+          </tr>
+          <tr>
+            <td class="item-big-table__header">Люстра потолочная</td>
+            <td class="item-big-table__price">25 640 ₽</td>
+          </tr>
+          <tr>
+            <td class="item-big-table__header">Omnilux Bellona</td>
+          </tr>
+          </thead>
+        </table>
+        <div class="item-big-table__specification">
+          <table class="specification__table">
+            <thead>
+            <tr>
+              <td class="specification__text">Площадь освещения</td>
+              <td class="specification__text-bold">24 м²</td>
+            </tr>
+            <tr>
+              <td class="specification__text">Высота</td>
+              <td class="specification__text-bold">200 мм</td>
+            </tr>
+            <tr>
+              <td class="specification__text">Диаметр</td>
+              <td class="specification__text-bold">880 мм</td>
+            </tr>
+            </thead>
+          </table>
+          <table class="specification__table specification__table-right">
+            <thead>
+            <tr>
+              <td class="specification__text">Ширина</td>
+              <td class="specification__text-bold">850 мм</td>
+            </tr>
+            <tr>
+              <td class="specification__text">Длина</td>
+              <td class="specification__text-bold">950 мм</td>
+            </tr>
+            </thead>
+          </table>
+        </div>
+        <p class="item-big__text">Люстра подвесная из металла, цвет покрытия - золото. Люстра выполнена в классическом стиле. В светильнике используются 12 ламп G9 по 40 Ватт, площадь освещения 24 кв.м. Способ крепления: крючок. В комплекте: гарантийный талон, схема сборки, крючок. Гарантия 1 год.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-catalog__item-big item-big--other">
+    <div class="item-big__slide item-big__wrapper">
+      <div class="item-big__img">
+        <div class="item__markers-wrapper">
+          <div class="item__marker item__marker--new">new</div>
+          <div class="item__marker item__marker--hot">hot</div>
+        </div>
+        <button class="item-big__close-btn">
+          <span class="icon-close"></span>
+        </button>
+        <div class="item-big__slider--other">
+          <div class="item-big__slide">
+            <img src="./img/lustre-grid/1.jpg" alt="item-big">
+          </div>
+          <div class="item-big__slide">
+            <img src="./img/lustre-grid/1.jpg" alt="item-big">
+          </div>
+          <div class="item-big__slide">
+            <img src="./img/lustre-grid/1.jpg" alt="item-big">
+          </div>
+        </div>
+        <div class="item-big__dots-wrapper item-big__dots-wrapper--other"></div>
+        <div class="item-big__arrows-wrapper">
+          <button class="item-big__arrow item-big__arrow-left icon-slider-right-catalog"></button>
+          <button class="item-big__arrow item-big__arrow-right icon-slider-right-catalog"></button>
+        </div>
+      </div>
+
+      <div class="item-big__buttons">
+        <button class="item-big__link item-big__link-cart" href="basket.html">В корзину</button>
+        <button class="item-big__link item-big__link-more" href="product.html">Подробнее<span class="icon-arrow"></span></button>
+      </div>
+      <div class="item-big__info">
+        <table class="item-big__table">
+          <thead>
+          <tr>
+            <td class="item-big-table__serial">OML-85507-12</td>
+            <td class="item-big-table__price-crossed">25 640 ₽</td>
+          </tr>
+          <tr>
+            <td class="item-big-table__header">Люстра потолочная</td>
+            <td class="item-big-table__price">25 640 ₽</td>
+          </tr>
+          <tr>
+            <td class="item-big-table__header">Omnilux Sottana</td>
+          </tr>
+          </thead>
+        </table>
+        <div class="item-big-table__specification">
+          <table class="specification__table">
+            <thead>
+            <tr>
+              <td class="specification__text">Площадь освещения</td>
+              <td class="specification__text-bold">24 м²</td>
+            </tr>
+            <tr>
+              <td class="specification__text">Высота</td>
+              <td class="specification__text-bold">200 мм</td>
+            </tr>
+            <tr>
+              <td class="specification__text">Диаметр</td>
+              <td class="specification__text-bold">880 мм</td>
+            </tr>
+            </thead>
+          </table>
+          <table class="specification__table specification__table-right">
+            <thead>
+            <tr>
+              <td class="specification__text">Ширина</td>
+              <td class="specification__text-bold">850 мм</td>
+            </tr>
+            <tr>
+              <td class="specification__text">Длина</td>
+              <td class="specification__text-bold">950 мм</td>
+            </tr>
+            </thead>
+          </table>
+        </div>
+        <p class="item-big__text">Люстра подвесная из металла, цвет покрытия - золото. Люстра выполнена в классическом стиле. В светильнике используются 12 ламп G9 по 40 Ватт, площадь освещения 24 кв.м. Способ крепления: крючок. В комплекте: гарантийный талон, схема сборки, крючок. Гарантия 1 год. Люстра подвесная из металла, цвет покрытия - золото. Люстра выполнена в классическом стиле. В светильнике используются 12 ламп G9 по 40 Ватт, площадь освещения 24 кв.м. Способ крепления: крючок. В комплекте: гарантийный талон, схема сборки, крючок. Гарантия 1 год.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+@@include('template/footer.html')
+<!--@@include('template/confidence.html')-->
+@@include('template/scripts.html')
+
+</body>
+</html>

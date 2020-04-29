@@ -1,0 +1,531 @@
+@@include('template/head.html', {
+"pagetitle": "Мои заказы",
+"bodyclass": ""
+})
+
+<nav class="nav nav-catalog nav-hide">
+  @@include('template/nav.html', {
+  "profile_active": "true",
+  "basket_active": "false"
+  })
+</nav>
+@@include('template/nav-subtop.html')
+
+<main class="profile profile-orders-page js-menu-top-roll-up">
+
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="main.html">Главная</a>
+        <i class="icon-arrow"></i>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--active">Личный кабинет</a>
+      </li>
+    </ul>
+  </div>
+
+  <section class="profile-content">
+    <div class="profile__header-container">
+      <button class="profile__btn-back"><i class="icon-arrow-back"></i></button>
+      <h1 class="profile__header">Личный кабинет</h1>
+    </div>
+
+    <div class="profile-container">
+      <div class="profile-sidebar">
+        <ul class="profile-sidebar__list">
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link" href="#">Профиль</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link profile-sidebar__link--active" href="#">Мои заказы</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link" href="#">Лояльность</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link" href="#">Избранное</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link" href="#">Сменить пароль</a>
+          </li>
+          <li class="profile-sidebar__item">
+            <a class="profile-sidebar__link" href="#">Выйти</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="profile-orders-container">
+        <div class="profile-orders-content-container">
+
+          <div class="profile-orders-content">
+            <div class="profile-orders__top-container">
+              <h3 class="profile-orders__header">Мои заказы</h3>
+              <ul class="profile-orders__list">
+                <li class="profile-orders__item">
+                  <a class="profile-orders__link profile-orders__link--active" href="#">Все</a>
+                </li>
+                <li class="profile-orders__item">
+                  <a class="profile-orders__link" href="#">Обработка</a>
+                </li>
+                <li class="profile-orders__item">
+                  <a class="profile-orders__link" href="#">Выполнен</a>
+                </li>
+                <li class="profile-orders__item">
+                  <a class="profile-orders__link" href="#">Отменён</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="profile-orders__table-container">
+              <div class="profile-orders__table">
+                <div class="orders-table__captions">
+                  <div class="caption col_01 orders-table__number">Номер</div>
+                  <div class="caption col_02 orders-table__consist">Состав заказа</div>
+                  <div class="caption col_03 orders-table__price">Цена</div>
+                  <div class="caption col_04 orders-table__sum">Сумма</div>
+                  <div class="caption col_05 orders-table__status">Статус</div>
+                </div>
+
+                <div class="orders-table__item orders-table__item--bg">
+                  <div class="col_01">
+                    <span class="orders-table__mobile-caption">Номер</span>
+                    <span class="orders-table__number">123</span>
+                    <span class="orders-table__time">15.03.2019 в 19:30</span>
+                  </div>
+                  <div class="col_02-03 orders-table__product-col">
+                    <span class="orders-table__mobile-caption">Состав заказа</span>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text">44&nbsp;983&nbsp;₽</span>
+                      </div>
+                    </div>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×1</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-88204-01 Настольная лампа Omnilux Laglio</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text">5&nbsp;083&nbsp;₽</span>
+                      </div>
+                    </div>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×1</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-88603-08 Люстра подвесная Omnilux Meltina</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text">12&nbsp;100&nbsp;₽</span>
+                      </div>
+                    </div>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×99</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-88205-01 Торшер Omnilux Laglio</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text">300&nbsp;₽</span>
+                      </div>
+                    </div>
+
+                    <a class="orders-table__collapse" href="#">свернуть</a>
+                    <span class="orders-table__more">и ещё <a class="orders-table__more-link" href="#">3 товара</a></span>
+                  </div>
+                  <div class="col_04">
+                    <span class="orders-table__mobile-caption">Сумма</span>
+                    <span class="orders-table__text">134&nbsp;950&nbsp;₽</span>
+                  </div>
+                  <div class="col_05">
+                    <span class="orders-table__mobile-caption">Статус</span>
+                    <span class="orders-table__text">Обработка</span>
+                  </div>
+                </div>
+
+
+                <div class="orders-table__item">
+                  <div class="col_01">
+                    <span class="orders-table__mobile-caption">Номер</span>
+                    <span class="orders-table__number">101</span>
+                    <span class="orders-table__time">12.03.2019 в 19:30</span>
+                  </div>
+                  <div class="col_02-03 orders-table__product-col">
+                    <span class="orders-table__mobile-caption">Состав заказа</span>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+
+                    <a class="orders-table__collapse" href="#">свернуть</a>
+                    <span class="orders-table__more">и ещё <a class="orders-table__more-link" href="#">3 товара</a></span>
+                  </div>
+                  <div class="col_04">
+                    <span class="orders-table__mobile-caption">Сумма</span>
+                    <span class="orders-table__text">41 550 ₽</span>
+                  </div>
+                  <div class="col_05">
+                    <span class="orders-table__mobile-caption">Статус</span>
+                    <span class="orders-table__text">Выполнен</span>
+                  </div>
+                </div>
+
+                <div class="orders-table__item orders-table__item--bg">
+                  <div class="col_01">
+                    <span class="orders-table__mobile-caption">Номер</span>
+                    <span class="orders-table__number">89</span>
+                    <span class="orders-table__time">10.03.2019 в 19:30</span>
+                  </div>
+                  <div class="col_02-03 orders-table__product-col">
+                    <span class="orders-table__mobile-caption">Состав заказа</span>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+
+                    <a class="orders-table__collapse" href="#">свернуть</a>
+                    <span class="orders-table__more">и ещё <a class="orders-table__more-link" href="#">3 товара</a></span>
+                  </div>
+                  <div class="col_04">
+                    <span class="orders-table__mobile-caption">Сумма</span>
+                    <span class="orders-table__text">110 800 ₽</span>
+                  </div>
+                  <div class="col_05">
+                    <span class="orders-table__mobile-caption">Статус</span>
+                    <span class="orders-table__text">Выполнен</span>
+                  </div>
+                </div>
+
+                <div class="orders-table__item">
+                  <div class="col_01">
+                    <span class="orders-table__mobile-caption">Номер</span>
+                    <span class="orders-table__number">71</span>
+                    <span class="orders-table__time">01.03.2019 в 19:30</span>
+                  </div>
+                  <div class="col_02-03 orders-table__product-col">
+                    <span class="orders-table__mobile-caption">Состав заказа</span>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+
+                    <a class="orders-table__collapse" href="#">свернуть</a>
+                    <span class="orders-table__more">и ещё <a class="orders-table__more-link" href="#">3 товара</a></span>
+                  </div>
+                  <div class="col_04">
+                    <span class="orders-table__mobile-caption">Сумма</span>
+                    <span class="orders-table__text">12 300 ₽</span>
+                  </div>
+                  <div class="col_05">
+                    <span class="orders-table__mobile-caption">Статус</span>
+                    <span class="orders-table__text">Отменён</span>
+                  </div>
+                </div>
+
+                <div class="orders-table__item orders-table__item--bg">
+                  <div class="col_01">
+                    <span class="orders-table__mobile-caption">Номер</span>
+                    <span class="orders-table__number">123</span>
+                    <span class="orders-table__time">15.03.2019 в 19:30</span>
+                  </div>
+                  <div class="col_02-03 orders-table__product-col">
+                    <span class="orders-table__mobile-caption">Состав заказа</span>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+
+                    <a class="orders-table__collapse" href="#">свернуть</a>
+                    <span class="orders-table__more">и ещё <a class="orders-table__more-link" href="#">3 товара</a></span>
+                  </div>
+                  <div class="col_04">
+                    <span class="orders-table__mobile-caption">Сумма</span>
+                    <span class="orders-table__text">1 200 ₽</span>
+                  </div>
+                  <div class="col_05">
+                    <span class="orders-table__mobile-caption">Статус</span>
+                    <span class="orders-table__text">Обработка</span>
+                  </div>
+                </div>
+
+                <div class="orders-table__item">
+                  <div class="col_01">
+                    <span class="orders-table__mobile-caption">Номер</span>
+                    <span class="orders-table__number">101</span>
+                    <span class="orders-table__time">12.03.2019 в 19:30</span>
+                  </div>
+                  <div class="col_02-03 orders-table__product-col">
+                    <span class="orders-table__mobile-caption">Состав заказа</span>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+
+                    <a class="orders-table__collapse" href="#">свернуть</a>
+                    <span class="orders-table__more">и ещё <a class="orders-table__more-link" href="#">3 товара</a></span>
+                  </div>
+                  <div class="col_04">
+                    <span class="orders-table__mobile-caption">Сумма</span>
+                    <span class="orders-table__text">225 430 ₽</span>
+                  </div>
+                  <div class="col_05">
+                    <span class="orders-table__mobile-caption">Статус</span>
+                    <span class="orders-table__text">Выполнен</span>
+                  </div>
+                </div>
+
+                <div class="orders-table__item orders-table__item--bg">
+                  <div class="col_01">
+                    <span class="orders-table__mobile-caption">Номер</span>
+                    <span class="orders-table__number">89</span>
+                    <span class="orders-table__time">10.03.2019 в 19:30</span>
+                  </div>
+                  <div class="col_02-03 orders-table__product-col">
+                    <span class="orders-table__mobile-caption">Состав заказа</span>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+
+                    <a class="orders-table__collapse" href="#">свернуть</a>
+                    <span class="orders-table__more">и ещё <a class="orders-table__more-link" href="#">3 товара</a></span>
+                  </div>
+                  <div class="col_04">
+                    <span class="orders-table__mobile-caption">Сумма</span>
+                    <span class="orders-table__text">40 000 ₽</span>
+                  </div>
+                  <div class="col_05">
+                    <span class="orders-table__mobile-caption">Статус</span>
+                    <span class="orders-table__text">Выполнен</span>
+                  </div>
+                </div>
+
+                <div class="orders-table__item">
+                  <div class="col_01">
+                    <span class="orders-table__mobile-caption">Номер</span>
+                    <span class="orders-table__number">71</span>
+                    <span class="orders-table__time">01.03.2019 в 19:30</span>
+                  </div>
+                  <div class="col_02-03 orders-table__product-col">
+                    <span class="orders-table__mobile-caption">Состав заказа</span>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+                    <div class="orders-table__product">
+                      <div class="product__inner-col-01">
+                        <span class="orders-table__amount">×3</span>
+                        <div class="orders-table__product-link-container">
+                          <a class="orders-table__product-link" href="#">OML-00107-120 Люстра потолочная светодиодная Omnilux Sottana</a>
+                        </div>
+                      </div>
+                      <div class="product__inner-col-02">
+                        <span class="orders-table__text"></span>
+                      </div>
+                    </div>
+
+                    <a class="orders-table__collapse" href="#">свернуть</a>
+                    <span class="orders-table__more">и ещё <a class="orders-table__more-link" href="#">3 товара</a></span>
+                  </div>
+                  <div class="col_04">
+                    <span class="orders-table__mobile-caption">Сумма</span>
+                    <span class="orders-table__text">82 110 ₽</span>
+                  </div>
+                  <div class="col_05">
+                    <span class="orders-table__mobile-caption">Статус</span>
+                    <span class="orders-table__text">Отменён</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="profile-orders__pagination">
+              <ul class="orders-pagination__list">
+                <li class="orders-pagination__item">
+                  <button class="orders-pagination__link orders-pagination__link-prev">
+                    <i class="icon-slider-right-catalog"></i>
+                  </button>
+                </li>
+                <li class="orders-pagination__item">
+                  <button class="orders-pagination__link orders-pagination__link--active">1</button>
+                </li>
+                <li class="orders-pagination__item">
+                  <button class="orders-pagination__link">2</button>
+                </li>
+                <li class="orders-pagination__item">
+                  <button class="orders-pagination__link">3</button>
+                </li>
+                <li class="orders-pagination__item">
+                  <button class="orders-pagination__link">4</button>
+                </li>
+                <li class="orders-pagination__item">
+                  <button class="orders-pagination__link">5</button>
+                </li>
+                <li class="orders-pagination__item">
+                  <button class="orders-pagination__link">...</button>
+                </li>
+                <li class="orders-pagination__item">
+                  <button class="orders-pagination__link">15</button>
+                </li>
+                <li class="orders-pagination__item">
+                  <button class="orders-pagination__link orders-pagination__link-next">
+                    <i class="icon-slider-right-catalog"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="profile__right-sidebar">
+
+            <div class="right-sidebar__discount">
+              <div class="sidebar-discount__container">
+                <b class="sidebar-discount__number">10%</b>
+                <p class="sidebar-discount__text">Ваша партнерская скидка</p>
+              </div>
+              <div class="sidebar-discount__price-list-container">
+                <a href="#"></a><i class="price-list-link-icon icon-download-price-list"></i>
+                <div class="sidebar-discount__price-list-link-container">
+                  <a class="sidebar-discount__price-list-link" href="#">Скачать оптовый прайс-лист</a>
+                  <span class="sidebar-discount__price-list-size">XLS, 1.5 Mb</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-sidebar__manager">
+              <div class="right-sidebar__manager-block">
+                <h4 class="sidebar-manager__header">Ваш персональный менеджер</h4>
+                <!--	тут картинки можно ставить любого размера, только соотношение сторон должно быть 1к1-->
+                <img class="sidebar-manager__img" src="./img/review/avatar-03.png" alt="manager-img">
+              </div>
+              <div class="right-sidebar__manager-block">
+                <b class="sidebar-manager__name">Вероника Перельман</b>
+                <span class="sidebar-manager__post">Ведущий специалист оптового отдела</span>
+                <div class="right-sidebar__manager-contacts">
+                  <a class="sidebar-manager__tel" href="tel:+74956443414">8&nbsp;(495)&nbsp;644&nbsp;-34&nbsp;-14</a>
+                  <a class="sidebar-manager__email" href="mailto:veronika@eurogalant.ru">veronika@eurogalant.ru</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+@@include('template/footer.html')
+<!--@@include('template/confidence.html')-->
+@@include('template/scripts.html')
+
+</body>
+</html>

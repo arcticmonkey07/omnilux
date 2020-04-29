@@ -1,0 +1,244 @@
+@@include('template/head.html', {
+"pagetitle": "Новости",
+"bodyclass": ""
+})
+
+<nav class="nav nav-catalog nav-hide">
+  @@include('template/nav.html', {
+  "profile_active": "false",
+  "basket_active": "false"
+  })
+</nav>
+@@include('template/nav-subtop.html')
+
+<div class="news-page-container js-menu-top-roll-up">
+  <main class="news-page">
+
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="main.html">Главная</a>
+          <i class="icon-arrow"></i>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--active">Новости</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="news">
+      <div class="news-categories__container">
+        <h1 class="news-page__header">Новости</h1>
+        <ul class="news-categories__list">
+          <li class="news-categories__item">
+            <a class="news-categories__link news-categories__link--active" href="#">Все</a>
+          </li>
+          <li class="news-categories__item">
+            <a class="news-categories__link" href="#">СМИ о нас</a>
+          </li>
+          <li class="news-categories__item">
+            <a class="news-categories__link" href="#">Новости</a>
+          </li>
+          <li class="news-categories__item">
+            <a class="news-categories__link" href="#">Категория 1</a>
+          </li>
+          <li class="news-categories__item">
+            <a class="news-categories__link" href="#">Категория 2</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="news-grid-container">
+        <div class="news-grid">
+          <div class="news-item-container">
+            <div class="news-item">
+              <!--	любой размер, но картинка будет обрезаться если другого размера нежели эта-->
+              <a href="#"><img class="news-item__img" src="./img/static03.jpg" alt="news-item"></a>
+              <span class="news-item__date">20.03.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Омнилюкс - на телеканале Shop&show</a></h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/2.png" alt="news-item"></a>
+              <span class="news-item__date">12.03.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Новый каталог нашего партнера Lussole</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/3.png" alt="news-item"></a>
+              <span class="news-item__date">01.03.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Гарантия лучшей цены! Нашли дешевле? Снизим цену!</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/4.png" alt="news-item"></a>
+              <span class="news-item__date">16.01.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Киберпонедельник !!! с 26.01.2019г. до 28.01.2019г.</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/5.png" alt="news-item"></a>
+              <span class="news-item__date">29.12.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">График работы в новогодние праздники 2019</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/6.png" alt="news-item"></a>
+              <span class="news-item__date">28.12.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Международный журнал «Дом&Интерьер» о компании «Omnilux»</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/7.png" alt="news-item"></a>
+              <span class="news-item__date">25.12.2018</span>
+              <h4 class="news-item__header">
+                <a href="#">С наступающим новым годом!</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/8.png" alt="news-item"></a>
+              <span class="news-item__date">20.12.2018</span>
+              <h4 class="news-item__header">
+                <a href="#">Скидка на стильные светильники для кухни!</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/9.png" alt="news-item"></a>
+              <span class="news-item__date">12.12.2018</span>
+              <h4 class="news-item__header">
+                <a href="#">Расширение ассортимента в разделе «Лофт»</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/10.png" alt="news-item"></a>
+              <span class="news-item__date">20.12.2018</span>
+              <h4 class="news-item__header">
+                <a href="#">Вышел новый каталог продукции «OMNILUX PREMIUM» 2018-2019г</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/1.png" alt="news-item"></a>
+              <span class="news-item__date">20.03.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Омнилюкс - на телеканале Shop&show</a></h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/2.png" alt="news-item"></a>
+              <span class="news-item__date">12.03.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Новый каталог нашего партнера Lussole</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/3.png" alt="news-item"></a>
+              <span class="news-item__date">01.03.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Гарантия лучшей цены! Нашли дешевле? Снизим цену!</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/4.png" alt="news-item"></a>
+              <span class="news-item__date">16.01.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Киберпонедельник !!! с 26.01.2019г. до 28.01.2019г.</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/5.png" alt="news-item"></a>
+              <span class="news-item__date">29.12.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">График работы в новогодние праздники 2019</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/6.png" alt="news-item"></a>
+              <span class="news-item__date">28.12.2019</span>
+              <h4 class="news-item__header">
+                <a href="#">Международный журнал «Дом&Интерьер» о компании «Omnilux»</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/7.png" alt="news-item"></a>
+              <span class="news-item__date">25.12.2018</span>
+              <h4 class="news-item__header">
+                <a href="#">С наступающим новым годом!</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/8.png" alt="news-item"></a>
+              <span class="news-item__date">20.12.2018</span>
+              <h4 class="news-item__header">
+                <a href="#">Скидка на стильные светильники для кухни!</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container">
+            <div class="news-item">
+              <a href="#"><img class="news-item__img" src="./img/news-grid/9.png" alt="news-item"></a>
+              <span class="news-item__date">12.12.2018</span>
+              <h4 class="news-item__header">
+                <a href="#">Расширение ассортимента в разделе «Лофт»</a>
+              </h4>
+            </div>
+          </div>
+          <div class="news-item-container news-item__more-container">
+            <div class="news-item__more">
+              <button class="item-more__btn">
+                Показать ещё
+                <span class="item-more__plus">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('template/footer.html')
+</div>
+
+<!--@@include('template/confidence.html')-->
+@@include('template/scripts.html')
+
+</body>
+</html>

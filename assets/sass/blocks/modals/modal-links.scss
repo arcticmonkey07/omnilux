@@ -1,0 +1,40 @@
+.modal-links {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 29;
+  display:none;
+  width: 200px;
+  height: 381px;
+  background-color: $background;
+  color:#000;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+
+  & button {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background-color: $yellow;
+    cursor: pointer;
+    transition: .2s;
+    text-decoration: none;
+
+    &:hover {
+      color: $yellow;
+      background-color: #FFFFFF;
+    }
+  }
+}

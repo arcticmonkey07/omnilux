@@ -1,0 +1,119 @@
+.log-in-modal {
+  top: 55%;
+}
+
+.log-in-container {
+  padding-bottom: 30px;
+}
+
+.log-in__header {
+  margin-bottom: 55px;
+}
+
+.log-in__input-link-forgot-password {
+  position: absolute;
+  top: -19px;
+  right: 0;
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.modal__input-password-container {
+  margin-bottom: 28px;
+}
+
+.modal__input-btn-show-pass {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  display: block;
+  border: none;
+  width: 33px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url(../img/icons/modal-pass-hide.svg);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.modal__input-btn-show-pass--hide {
+  margin-right: 2px;
+  background-image: url(../img/icons/modal-pass-show.svg);
+}
+
+.log-in__remember-me-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.remember-me__checkbox {
+  display: none;
+}
+
+.remember-me__checkbox:checked ~ .remember-me__checkbox-indicator:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background-color: $yellow;
+}
+
+.remember-me__checkbox-indicator {
+  position: relative;
+  display: block;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $yellow;
+  border-radius: 5px;
+  background: $background;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (max-width: 1600px) {
+    min-width: 20px;
+  }
+}
+
+.remember-me__text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: #FFFFFF;
+  transition: .3s;
+
+  &:hover {
+    color: $white-hover;
+  }
+}
+
+.log-in__buttons-container {
+  display: flex;
+}
+
+.log-in__buttons-container > .modal__btn-submit {
+  width: 50%;
+
+  @media (max-width: 450px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.log-in__btn-register {
+  background-color: $background;
+
+  &:hover {
+    background-color: lighten($background, 10%);
+  }
+}

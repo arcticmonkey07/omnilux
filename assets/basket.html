@@ -1,0 +1,436 @@
+@@include('template/head.html', {
+"pagetitle": "Корзина",
+"bodyclass": ""
+})
+
+<nav class="nav nav-catalog nav-hide">
+  @@include('template/nav.html', {
+  "profile_active": "false",
+  "basket_active": "true"
+  })
+</nav>
+@@include('template/nav-subtop.html')
+
+<div class="basket-page-container js-menu-top-roll-up">
+  <main class="basket-page">
+
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="main.html">Главная</a>
+          <i class="icon-arrow"></i>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--active">Корзина</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="basket">
+      <div class="profile__header-container profile__header-container--basket">
+        <button class="profile__btn-back"><i class="icon-arrow-back"></i></button>
+        <h1 class="profile__header">Корзина</h1>
+      </div>
+
+      <form action="">
+        <div class="basket-container">
+          <div class="basket-content">
+            <div class="basket-list-container">
+              <div class="basket__table-caption">
+                <span class="table-caption__name">Наименование</span>
+                <span class="table-caption__quantity">Количество</span>
+                <span class="table-caption__discount">Скидка</span>
+                <span class="table-caption__price">Стоимость</span>
+              </div>
+
+              <div class="basket__table-item basket__table-item--bg">
+                <div class="table-item-container">
+                  <div class="table-item__block-img">
+                    <div class="table-item__img">
+                      <a href="#">
+                        <span class="table-item__img-mark table-item__img-mark--sell">sell</span>
+                        <span class="table-item__img-mark table-item__img-mark--new visually-hidden">new</span>
+                        <img src="./img/img-basket.png" alt="img-basket">
+                      </a>
+                    </div>
+                    <div class="table-item__name">
+                      <span class="table-item__serial">OML-00107-120</span>
+                      <span class="table-item__name-text">
+                        <a href="#">Люстра потолочная светодиодная Omnilux Sottana</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table-item__quantity">
+                    <span class="table-item__mobile-header">Количество</span>
+                    <div class="table-item__quantity-container">
+                      <span class="table-item__quantity-btn table-item__quantity-btn-minus">
+                        &ndash;
+                      </span>
+                      <span class="table-item__quantity-text">2</span>
+                      <span class="table-item__quantity-btn">
+                        +
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table-item__block-price">
+                    <div class="table-item__discount">
+                      <span class="table-item__mobile-header">Скидка</span>
+                      <div class="table-item__discount-text">-8%</div>
+                    </div>
+
+                    <div class="table-item__price">
+                      <span class="table-item__mobile-header">Цена</span>
+                      <div class="table-item__price-wrapper">
+                        <div class="table-item__price-container">
+                          <span class="table-item__price-text-one">6 590 ₽ за шт.</span>
+                          <span class="table-item__price-text">13 180 ₽</span>
+                          <span class="table-item__price-crossed">9 590 ₽</span>
+                        </div>
+                        <button class="table-item__price-btn-close">
+                          <i class="icon-close"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="basket__table-item">
+                <div class="table-item-container">
+                  <div class="table-item__block-img">
+                    <div class="table-item__img">
+                      <a href="#">
+                        <span class="table-item__img-mark table-item__img-mark--sell">sell</span>
+                        <span class="table-item__img-mark table-item__img-mark--new visually-hidden">new</span>
+                        <img src="./img/img-basket.png" alt="img-basket">
+                      </a>
+                    </div>
+                    <div class="table-item__name">
+                      <span class="table-item__serial">OML-00107-120</span>
+                      <span class="table-item__name-text">
+                        <a href="#">Люстра потолочная светодиодная Omnilux Sottana</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table-item__quantity">
+                    <span class="table-item__mobile-header">Количество</span>
+                    <div class="table-item__quantity-container">
+                        <span class="table-item__quantity-btn table-item__quantity-btn-minus">
+                          &ndash;
+                        </span>
+                      <span class="table-item__quantity-text">1</span>
+                      <span class="table-item__quantity-btn">
+                          +
+                        </span>
+                    </div>
+                  </div>
+                  <div class="table-item__block-price">
+                    <div class="table-item__discount">
+                      <span class="table-item__mobile-header">Скидка</span>
+                      <div class="table-item__discount-text">-8%</div>
+                    </div>
+                    <div class="table-item__price">
+                      <span class="table-item__mobile-header">Цена</span>
+                      <div class="table-item__price-wrapper">
+                        <div class="table-item__price-container">
+                          <span class="table-item__price-text-one"></span>
+                          <span class="table-item__price-text">6 590 ₽</span>
+                          <span class="table-item__price-crossed"></span>
+                        </div>
+                        <button class="table-item__price-btn-close">
+                          <i class="icon-close"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="basket__table-item basket__table-item--bg">
+                <div class="table-item-container">
+                  <div class="table-item__block-img">
+                    <div class="table-item__img">
+                      <a href="#">
+                        <span class="table-item__img-mark table-item__img-mark--sell">sell</span>
+                        <span class="table-item__img-mark table-item__img-mark--new visually-hidden">new</span>
+                        <img src="./img/img-basket.png" alt="img-basket">
+                      </a>
+                    </div>
+                    <div class="table-item__name">
+                      <span class="table-item__serial">OML-00107-120</span>
+                      <span class="table-item__name-text">
+                        <a href="#">Люстра потолочная светодиодная Omnilux Sottana</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table-item__quantity">
+                    <span class="table-item__mobile-header">Количество</span>
+                    <div class="table-item__quantity-container">
+                        <span class="table-item__quantity-btn table-item__quantity-btn-minus">
+                          &ndash;
+                        </span>
+                      <span class="table-item__quantity-text">1</span>
+                      <span class="table-item__quantity-btn">
+                          +
+                        </span>
+                    </div>
+                  </div>
+                  <div class="table-item__block-price">
+                    <div class="table-item__discount">
+                      <span class="table-item__mobile-header">Скидка</span>
+                      <div class="table-item__discount-text">-8%</div>
+                    </div>
+                    <div class="table-item__price">
+                      <span class="table-item__mobile-header">Цена</span>
+                      <div class="table-item__price-wrapper">
+                        <div class="table-item__price-container">
+                          <span class="table-item__price-text-one"></span>
+                          <span class="table-item__price-text">6 590 ₽</span>
+                          <span class="table-item__price-crossed"></span>
+                        </div>
+                        <button class="table-item__price-btn-close">
+                          <i class="icon-close"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="basket__table-item">
+                <div class="table-item-container">
+                  <div class="table-item__block-img">
+                    <div class="table-item__img">
+                      <a href="#">
+                        <span class="table-item__img-mark table-item__img-mark--sell">sell</span>
+                        <span class="table-item__img-mark table-item__img-mark--new visually-hidden">new</span>
+                        <img src="./img/img-basket.png" alt="img-basket">
+                      </a>
+                    </div>
+                    <div class="table-item__name">
+                      <span class="table-item__serial">OML-00107-120</span>
+                      <span class="table-item__name-text">
+                        <a href="#">Люстра потолочная светодиодная Omnilux Sottana</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table-item__quantity">
+                    <span class="table-item__mobile-header">Количество</span>
+                    <div class="table-item__quantity-container">
+                        <span class="table-item__quantity-btn table-item__quantity-btn-minus">
+                          &ndash;
+                        </span>
+                      <span class="table-item__quantity-text">1</span>
+                      <span class="table-item__quantity-btn">
+                          +
+                        </span>
+                    </div>
+                  </div>
+                  <div class="table-item__block-price">
+                    <div class="table-item__discount">
+                      <span class="table-item__mobile-header">Скидка</span>
+                      <div class="table-item__discount-text">-10%</div>
+                    </div>
+                    <div class="table-item__price">
+                      <span class="table-item__mobile-header">Цена</span>
+                      <div class="table-item__price-wrapper">
+                        <div class="table-item__price-container">
+                          <span class="table-item__price-text-one"></span>
+                          <span class="table-item__price-text">6 590 ₽</span>
+                          <span class="table-item__price-crossed">9 590 ₽</span>
+                        </div>
+                        <button class="table-item__price-btn-close">
+                          <i class="icon-close"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="basket__table-item basket__table-item--bg">
+                <div class="table-item-container">
+                  <div class="table-item__block-img">
+                    <div class="table-item__img">
+                      <a href="#">
+                        <span class="table-item__img-mark table-item__img-mark--sell">sell</span>
+                        <span class="table-item__img-mark table-item__img-mark--new visually-hidden">new</span>
+                        <img src="./img/img-basket.png" alt="img-basket">
+                      </a>
+                    </div>
+                    <div class="table-item__name">
+                      <span class="table-item__serial">OML-00107-120</span>
+                      <span class="table-item__name-text">
+                        <a href="#">Люстра потолочная светодиодная Omnilux Sottana</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table-item__quantity">
+                    <span class="table-item__mobile-header">Количество</span>
+                    <div class="table-item__quantity-container">
+                        <span class="table-item__quantity-btn table-item__quantity-btn-minus">
+                          &ndash;
+                        </span>
+                      <span class="table-item__quantity-text">1</span>
+                      <span class="table-item__quantity-btn">
+                          +
+                        </span>
+                    </div>
+                  </div>
+                  <div class="table-item__block-price">
+                    <div class="table-item__discount">
+                      <span class="table-item__mobile-header">Скидка</span>
+                      <div class="table-item__discount-text">-8%</div>
+                    </div>
+                    <div class="table-item__price">
+                      <span class="table-item__mobile-header">Цена</span>
+                      <div class="table-item__price-wrapper">
+                        <div class="table-item__price-container">
+                          <span class="table-item__price-text-one"></span>
+                          <span class="table-item__price-text">6 590 ₽</span>
+                          <span class="table-item__price-crossed"></span>
+                        </div>
+                        <button class="table-item__price-btn-close">
+                          <i class="icon-close"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="basket__table-item">
+                <div class="table-item-container">
+                  <div class="table-item__block-img">
+                    <div class="table-item__img">
+                      <a href="#">
+                        <span class="table-item__img-mark table-item__img-mark--sell">sell</span>
+                        <span class="table-item__img-mark table-item__img-mark--new visually-hidden">new</span>
+                        <img src="./img/img-basket.png" alt="img-basket">
+                      </a>
+                    </div>
+                    <div class="table-item__name">
+                      <span class="table-item__serial">OML-00107-120</span>
+                      <span class="table-item__name-text">
+                        <a href="#">Люстра потолочная светодиодная Omnilux Sottana</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table-item__quantity">
+                    <span class="table-item__mobile-header">Количество</span>
+                    <div class="table-item__quantity-container">
+                        <span class="table-item__quantity-btn table-item__quantity-btn-minus">
+                          &ndash;
+                        </span>
+                      <span class="table-item__quantity-text">2</span>
+                      <span class="table-item__quantity-btn">
+                          +
+                        </span>
+                    </div>
+                  </div>
+                  <div class="table-item__block-price">
+                    <div class="table-item__discount">
+                      <span class="table-item__mobile-header">Скидка</span>
+                      <div class="table-item__discount-text"></div>
+                    </div>
+                    <div class="table-item__price">
+                      <span class="table-item__mobile-header">Цена</span>
+                      <div class="table-item__price-wrapper">
+                        <div class="table-item__price-container">
+                          <span class="table-item__price-text-one">6 590 ₽ за шт.</span>
+                          <span class="table-item__price-text">13 180 ₽</span>
+                          <span class="table-item__price-crossed"></span>
+                        </div>
+                        <button class="table-item__price-btn-close">
+                          <i class="icon-close"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+          </div>
+          <div class="basket__sidebar-container">
+            <div class="basket__sidebar">
+              <div class="basket-sidebar__promo-container">
+                <input class="basket-sidebar__promo-input" type="text" placeholder="Введите промокод для скидки">
+                <button class="basket-sidebar__promo-btn">
+                  <i class="icon-slider-right-catalog"></i>
+                </button>
+              </div>
+
+              <div class="basket-sidebar__final-container">
+                <div class="basket-sidebar__final-wrapper">
+                  <h4 class="basket-sidebar__final__header">Итого</h4>
+                  <div class="basket-sidebar__final-block">
+                    <span class="basket-sidebar__final-text-left">6 товаров на общую сумму</span>
+                    <span class="basket-sidebar__final-text-right">39 540 ₽</span>
+                  </div>
+                  <div class="basket-sidebar__final-block">
+                    <span class="basket-sidebar__final-text-left">Экономия</span>
+                    <span class="basket-sidebar__final-text-right">5 700 ₽</span>
+                  </div>
+
+                  <ul class="basket-sidebar__final-delivery">
+                    <li class="final-delivery__block">
+                      <div class="final-delivery__text-container">
+                        <span class="final-delivery__text">Доставка по <a class="final-delivery__text-link" href="#">Москве</a></span>
+                        <span class="final-delivery__subtext">Завтра или позже</span>
+                        <span class="final-delivery__subtext">До бесплатной доставки добавьте товаров на 240 ₽.</span>
+                      </div>
+                      <span class="final-delivery__price">500&nbsp;₽</span>
+                    </li>
+
+                    <li class="final-delivery__block">
+                      <div class="final-delivery__text-container">
+                        <span class="final-delivery__text">Доставка курьером Boxberry</span>
+                        <span class="final-delivery__subtext">Завтра или позже</span>
+                      </div>
+                      <span class="final-delivery__price">500&nbsp;₽</span>
+                    </li>
+
+                    <li class="final-delivery__block">
+                      <div class="final-delivery__text-container">
+                        <span class="final-delivery__text">Доставка курьером Boxberry</span>
+                        <span class="final-delivery__subtext">Завтра или позже</span>
+                      </div>
+                      <span class="final-delivery__price">500&nbsp;₽</span>
+                    </li>
+
+                    <li class="final-delivery__block">
+                      <div class="final-delivery__text-container">
+                        <span class="final-delivery__text">Выдача в пункте Boxberry</span>
+                        <span class="final-delivery__subtext"><a class="final-delivery__text-link" href="#">3 пункта выдачи</a> — завтра</span>
+                      </div>
+                      <span class="final-delivery__price">бесплатно</span>
+                    </li>
+
+                    <li class="final-delivery__block">
+                      <div class="final-delivery__text-container">
+                        <span class="final-delivery__text">Самовывоз из магазина</span>
+                        <span class="final-delivery__subtext"><a class="final-delivery__text-link" href="#">3 магазина</a> — сегодня</span>
+                      </div>
+                      <span class="final-delivery__price">бесплатно</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="final-delivery__btn-submit-order" type="submit">Оформить заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+
+  </main>
+
+@@include('template/footer.html')
+</div>
+<!--@@include('template/confidence.html')-->
+@@include('template/scripts.html')
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+@@include('template/head.html', {
+"pagetitle": "Отзывы",
+"bodyclass": ""
+})
+
+<nav class="nav nav-catalog nav-hide">
+  @@include('template/nav.html', {
+  "profile_active": "false",
+  "basket_active": "false"
+  })
+</nav>
+@@include('template/nav-subtop.html')
+
+@@include('template/modals/leave-feedback-modal.html')
+@@include('template/modals/feedback-success-modal.html')
+
+<div class="reviews-page-container js-menu-top-roll-up">
+  <main class="reviews-page">
+
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="main.html">Главная</a>
+          <i class="icon-arrow"></i>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--active">Отзывы</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="reviews add_blackout">
+      <div class="reviews__top-container">
+        <h1 class="reviews__header">Отзывы о магазине</h1>
+      </div>
+
+      <div class="reviews-container">
+        <div class="reviews-left">
+          <div class="reviews-left-wrapper">
+            <div class="reviews-left__rating-container">
+              <h4 class="reviews-left__text">Общая оценка:</h4>
+              <div class="reviews-left__rating">
+                <input type="text" value="4.8" data-width="100%" data-height="100%" class="reviews__rating-input">
+              </div>
+            </div>
+            <div class="reviews-left__filter-container">
+              <h4 class="reviews-left__text">Подбор параметров</h4>
+              <a class="reviews-left__filter-text reviews-left__filter-text--rate">Фильтр по оценке (4 звезды)<button class="icon-close"></button></a>
+              <span class="reviews-left__filter-text reviews-left__filter-text--date">Сортировать по (По дате)<button class="icon-close"></button></span>
+            </div>
+          </div>
+          <div class="reviews-left__btns-container">
+            <button class="reviews-left__btn reviews-left__btn-discard">Сбросить</button>
+            <button class="reviews-left__btn reviews-left__btn-show">Показать</button>
+          </div>
+        </div>
+
+        <div class="reviews-center">
+            <ul class="reviews-center__list-rating">
+              <li>
+                <a class="reviews-center__link-rating" href="#">Все</a>
+              </li>
+              <li>
+                <a class="reviews-center__link-rating" href="#">1 звезда</a>
+              </li>
+              <li>
+                <a class="reviews-center__link-rating" href="#">2 звезды</a>
+              </li>
+              <li>
+                <a class="reviews-center__link-rating" href="#">3 звезды</a>
+              </li>
+              <li>
+                <a class="reviews-center__link-rating reviews-center__link-rating--active" href="#">4 звезды</a>
+              </li>
+              <li>
+                <a class="reviews-center__link-rating" href="#">5 звёзд</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="reviews-right">
+          <a class="reviews__btn-add" href="#">Оставить отзыв</a>
+          <div class="reviews-right__review review">
+            <div class="review__avatar-container">
+              <div class="review__avatar">
+                <span class="review__avatar-letter review__avatar-first-letter">К</span>
+                <span class="review__avatar-letter review__avatar-last-letter">К</span>
+              </div>
+<!--              <img class="review__avatar" src="./img/review/avatar_default.png" alt="review-avatar">-->
+              <h3 class="review__name">Константинопольский Константин</h3>
+            </div>
+            <div class="review__descr-container">
+              <div class="review__top-container">
+                <div class="review__rating">
+                  <select class="review-rating-select">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <span class="review__date">26 ноября, 2018г. 00:13</span>
+              </div>
+              <h4 class="review__header">Достоинства</h4>
+              <p class="review__text">Случайно нашла в инете этот сайт. Обрадовалась низкой цене на светильники тиффани. как оказалось это была черная пятница</p>
+              <h4 class="review__header">Недостатки</h4>
+              <p class="review__text">Получилось так, что оформлять заказ стала в 23.50 по москве. в каталоге скидка есть а в корзине уже по полной стоимости стоит товар без скидки. Разочаровалась и не оформила</p>
+              <h4 class="review__header">Комментарий</h4>
+              <p class="review__text">Очень жаль, что не успела((((</p>
+            </div>
+          </div>
+
+          <div class="reviews-right__review review">
+            <div class="review__avatar-container">
+              <div class="review__avatar">
+                <span class="review__avatar-letter review__avatar-first-letter">К</span>
+                <span class="review__avatar-letter review__avatar-last-letter">М</span>
+              </div>
+              <h3 class="review__name">Григорчук Марина</h3>
+            </div>
+            <div class="review__descr-container">
+              <div class="review__top-container">
+                <div class="review__rating">
+                  <select class="review-rating-select">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <span class="review__date">05 ноября, 2018г. 22:21</span>
+              </div>
+              <h4 class="review__header">Комментарий</h4>
+              <p class="review__text">в целом неплохо, за исключением опоздания курьера. По ценам понравилось, люстра отличная, гарантия есть.</p>
+            </div>
+          </div>
+
+          <div class="reviews-right__review review">
+            <div class="review__avatar-container">
+              <div class="review__avatar">
+                <span class="review__avatar-letter review__avatar-first-letter">Г</span>
+                <span class="review__avatar-letter review__avatar-last-letter">П</span>
+              </div>
+              <h3 class="review__name">Грекова Полина</h3>
+            </div>
+            <div class="review__descr-container">
+              <div class="review__top-container">
+                <div class="review__rating">
+                  <select class="review-rating-select">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <span class="review__date">05 октября, 2018г. 16:21</span>
+              </div>
+              <h4 class="review__header">Достоинства</h4>
+              <p class="review__text">Люстру быстро выбрала. Заказала, договорилась, что через день привезут. В день доставки курьер позвонил сначала утром, а потом еще в обед, сообщил, что сломалась машина, и мой заказ привезет другой курьер с небольшим опозданием. Так и случилось. Все это конечно мелочи, но неприятный осадок все равно остался.</p>
+            </div>
+          </div>
+
+          <div class="reviews-right__review review">
+            <div class="review__avatar-container">
+              <div class="review__avatar">
+                <span class="review__avatar-letter review__avatar-first-letter">О</span>
+                <span class="review__avatar-letter review__avatar-last-letter">Л</span>
+              </div>
+              <h3 class="review__name">Очаг Лена</h3>
+            </div>
+            <div class="review__descr-container">
+              <div class="review__top-container">
+                <div class="review__rating">
+                  <select class="review-rating-select">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <span class="review__date">30 сентября, 2018г. 19:06 </span>
+              </div>
+              <h4 class="review__header">Достоинства</h4>
+              <p class="review__text">уже третий раз делаю здесь заказ. И два из трех раз, удавалось дозваниваться в магазин только с третьей попытки.</p>
+              <h4 class="review__header">Недостатки</h4>
+              <p class="review__text">не всегда можно дозвониться в магазин с первого раза</p>
+              <h4 class="review__header">Комментарий</h4>
+              <p class="review__text">люстры мне очень нравится. Да и ценовая политика магазина очень приемлемая.</p>
+            </div>
+          </div>
+
+          <div class="reviews-right__review review">
+            <div class="review__avatar-container">
+              <div class="review__avatar">
+                <span class="review__avatar-letter review__avatar-first-letter">С</span>
+                <span class="review__avatar-letter review__avatar-last-letter">Д</span>
+              </div>
+              <h3 class="review__name">Соловьянинов Дмитрий</h3>
+            </div>
+            <div class="review__descr-container">
+              <div class="review__top-container">
+                <div class="review__rating">
+                  <select class="review-rating-select">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <span class="review__date">30 сентября, 2018г. 19:06 </span>
+              </div>
+              <h4 class="review__header">Достоинства</h4>
+              <p class="review__text">Купленной тут люстрой Omnilux Grottole довольны. Упаковка даже немного избыточная, все очень хорошо спрятано, захочешь не сломаешь. Все детальки на месте, все чистое, не мятое, не коцанное. Зацепили еще хорошую скидку. Модель распространенная, считай повезло так выкупить.</p>
+              <h4 class="review__header">Недостатки</h4>
+              <p class="review__text">На мой взгляд, дороговато берут за монтаж.</p>
+            </div>
+          </div>
+
+          <div class="profile-orders__pagination">
+            <ul class="orders-pagination__list">
+              <li class="orders-pagination__item">
+                <button class="orders-pagination__link orders-pagination__link-prev">
+                  <i class="icon-slider-right-catalog"></i>
+                </button>
+              </li>
+              <li class="orders-pagination__item">
+                <button class="orders-pagination__link orders-pagination__link--active">1</button>
+              </li>
+              <li class="orders-pagination__item">
+                <button class="orders-pagination__link">2</button>
+              </li>
+              <li class="orders-pagination__item">
+                <button class="orders-pagination__link">3</button>
+              </li>
+              <li class="orders-pagination__item">
+                <button class="orders-pagination__link">4</button>
+              </li>
+              <li class="orders-pagination__item">
+                <button class="orders-pagination__link">5</button>
+              </li>
+              <li class="orders-pagination__item">
+                <button class="orders-pagination__link">...</button>
+              </li>
+              <li class="orders-pagination__item">
+                <button class="orders-pagination__link">15</button>
+              </li>
+              <li class="orders-pagination__item">
+                <button class="orders-pagination__link orders-pagination__link-next">
+                  <i class="icon-slider-right-catalog"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('template/footer.html')
+</div>
+<!--@@include('template/confidence.html')-->
+@@include('template/scripts.html')
+
+</body>
+</html>

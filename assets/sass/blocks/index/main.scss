@@ -1,0 +1,35 @@
+.main-wrapper {
+  position: relative;
+  display: flex;
+  margin-top: 1px;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 10%, rgba(30,30,30,0.8) 50%, rgba(0, 0, 0, 0.9) 90% ), url(../img/bg_main.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  @media (max-width: 400px) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 10%, rgba(30,30,30,0.8) 50%, rgba(0, 0, 0, 0.9) 90% ), url(../img/bg_main-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (max-width: 330px) {
+    background-size: contain;
+  }
+}
+
+.line--animate {
+  &:after {
+    animation: line-animate .5s ease-in-out forwards;
+  }
+}
+
+@keyframes line-animate {
+  30% {
+    width: 0;
+  }
+  100% {
+    width: 95px;
+  }
+}

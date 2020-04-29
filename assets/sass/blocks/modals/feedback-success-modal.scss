@@ -1,0 +1,11 @@
+.feedback-success-modal {
+  background-color: $yellow;
+
+  .modal__header {
+    margin-bottom: 0;
+
+    @media (max-width: 450px) {
+      width: 200px;
+    }
+  }
+}

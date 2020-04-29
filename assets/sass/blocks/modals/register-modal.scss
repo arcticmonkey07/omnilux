@@ -1,0 +1,68 @@
+.register-container {
+  padding-bottom: 0;
+  overflow-y: scroll;
+
+  @media (max-height: 900px) {
+    max-height: 80vh;
+  }
+  @media (max-height: 800px) {
+    max-height: 70vh;
+  }
+  @media (max-height: 500px) {
+    max-height: 60vh;
+  }
+}
+
+.register-modal__clients-container {
+  @media (max-width: 450px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.clients__link {
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: .3s;
+
+  &:hover {
+    color: $yellow;
+
+    @media (max-width: 450px) {
+      color: #FFFFFF;
+    }
+  }
+
+  &.active {
+    border-bottom: 2px solid $yellow;
+
+    @media (max-width: 450px) {
+      border-bottom: none;
+      color: $yellow;
+    }
+  }
+
+  @media (max-width: 450px) {
+    margin: 0 0 30px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.clients__link--active {
+  pointer-events: none;
+}
+
+.register-modal__clients-container {
+  margin-bottom: 43px;
+}
+
+.register__btn-submit {
+  width: 100%;
+}

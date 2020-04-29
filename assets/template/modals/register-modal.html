@@ -1,0 +1,55 @@
+<div class="modal register-modal">
+  <form class="validate-form" action="">
+    <div class="modal-container register-container">
+
+      <div class="modal-header-container">
+        <button class="modal__btn-back"><i class="icon-arrow-back"></i></button>
+        <h2 class="modal__header">Регистрация</h2>
+      </div>
+
+      <div class="register-modal__clients-container">
+        <a class="clients__link clients__link-juridical active" href="#">Юрид.лицо</a>
+        <a class="clients__link clients__link-physical" href="#">Физ.лицо</a>
+      </div>
+
+      <div class="modal__input-container modal__input-company-name">
+        <input type="text" class="modal__input" placeholder="Название организации*" name="companyName" required>
+        <h4 class="modal__input-header">Название организации*</h4>
+      </div>
+
+      <div class="modal__input-container modal__input-inn">
+        <input type="text" class="modal__input num-input only-digits" placeholder="ИНН*" name="inn" inputmode="decimal" pattern="[0-9]*" required>
+        <h4 class="modal__input-header">ИНН*</h4>
+      </div>
+
+      <div class="modal__input-container">
+        <input type="text" class="modal__input" placeholder="Город*" name="city" required>
+        <h4 class="modal__input-header">Город*</h4>
+      </div>
+
+      <div class="modal__input-container">
+        <input type="text" class="modal__input" placeholder="Имя*" name="name" required>
+        <h4 class="modal__input-header">Имя*</h4>
+      </div>
+
+      <div class="modal__input-container">
+        <input type="text" class="modal__input" placeholder="Фамилия" name="lastName">
+        <h4 class="modal__input-header">Фамилия</h4>
+      </div>
+
+      <div class="modal__input-container">
+        <input type="tel" class="modal__input modal__input-tel mask__input-tel" placeholder="Телефон*" name="phone" required>
+        <h4 class="modal__input-header">Телефон*</h4>
+      </div>
+
+      <div class="modal__input-container">
+        <input type="email" class="modal__input" placeholder="E-mail*" name="email" required>
+        <h4 class="modal__input-header">E-mail*</h4>
+      </div>
+    </div>
+
+    <button class="modal__btn-submit register__btn-submit" type="submit">Отправить</button>
+  </form>
+
+  <button class="modal__btn-close"><i class="icon-close"></i></button>
+</div>

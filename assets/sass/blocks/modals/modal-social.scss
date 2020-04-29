@@ -1,0 +1,42 @@
+.modal-social__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+.modal-social__item {
+  margin-right: 30px;
+}
+
+.modal-social__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  transition: .3s;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.modal-social__icon--vk {
+  background-image: url(../img/icons/vk-color.svg);
+}
+
+.modal-social__icon--fb {
+  background-image: url(../img/icons/fb-color.svg);
+}
+
+.modal-social__icon--twitter {
+  height: 26px;
+  background-image: url(../img/icons/twitter-color.svg);
+}
+
+.modal-social__icon--google-plus {
+  background-image: url(../img/icons/google-plus-color.svg);
+}

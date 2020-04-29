@@ -1,0 +1,29 @@
+.more-link {
+  position: relative;
+  display: block;
+  margin-top: auto;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  color: $yellow;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    color: darken($yellow, 20%);
+  }
+}
+
+.more-link .icon-arrow {
+  &:before {
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 0;
+    font-size: 10px;
+    color: $yellow;
+  }
+}
+
+.more-link:hover .icon-arrow:before  {
+  color: darken($yellow, 20%);
+}

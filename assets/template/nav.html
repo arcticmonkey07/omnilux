@@ -1,0 +1,29 @@
+<div class="nav__logo">
+  <a href="../main.html"><img class="nav__logo-img" src="./img/main_logo.svg" alt="nav logo"></a>
+</div>
+<div class="nav__right">
+  <div class="nav__buttons">
+    <a class="nav-btn nav-btn__heart nav-btn__have-product icon-heart" href="#"></a>
+    <form class="nav__search-form" action="">
+      <div class="nav__search">
+        <input type="text" class="nav__search-input" autofocus>
+      </div>
+      <button class="nav-btn nav-btn__search icon-search" type="submit"></button>
+    </form>
+    @@if(profile_active == "true") {
+    <a class="nav-btn nav-btn__login nav-btn__login--active icon-login" href="#"></a>
+    }
+    @@if(profile_active == "false") {
+    <a class="nav-btn nav-btn__login icon-login" href="#"></a>
+    }
+    @@if(basket_active == "true") {
+    <a class="nav-btn nav-btn__cart nav-btn__cart--active nav-btn__have-product icon-cart" href="#"></a>
+    }
+    @@if(basket_active == "false") {
+    <a class="nav-btn nav-btn__cart nav-btn__have-product icon-cart" href="#"></a>
+    }
+    <button class="nav-btn nav-btn__menu icon-menu"></button>
+  </div>
+</div>
+
+

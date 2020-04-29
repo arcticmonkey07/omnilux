@@ -1,0 +1,143 @@
+.preview-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: 40px;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+  @media (max-width: 600px) {
+    margin-left: 15px;
+  }
+  @media (max-width: 500px) {
+    width: 300px;
+  }
+  @media (max-width: 450px) {
+    width: 250px;
+  }
+  @media (max-width: 400px) {
+    top: 212px;
+    width: 200px;
+    margin-left: 23px;
+    transform: none;
+  }
+}
+
+.preview__company-name {
+  margin-top: 0;
+  margin-left: -10px;
+  margin-bottom: 43px;
+  font-weight: 700;
+  font-size: 12.5vw;
+  line-height: 13vw;
+  text-transform: uppercase;
+  color: #FFC809;
+  mix-blend-mode: normal;
+
+  //min
+  @media (min-width: 2001px) {
+    margin-bottom: 0;
+    font-size: 17.5vw;
+    line-height: 18vw;
+  }
+  @media (min-width: 2100px) {
+    margin-bottom: 0;
+    font-size: 17.5vw;
+    line-height: 18vw;
+  }
+  //max
+  @media (max-width: 2000px) {
+    font-size: 16.5vw;
+    line-height: 17vw;
+  }
+  @media (max-width: 1600px) {
+    font-size: 15.5vw;
+    line-height: 16vw;
+  }
+  @media (max-width: 900px) {
+    margin-left: 0;
+  }
+  @media (max-width: 750px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 15px;
+  }
+  @media (max-width: 400px) {
+    margin-left: 0;
+    margin-bottom: 15px;
+    font-size: 13vw;
+    line-height: 13vw;
+  }
+}
+
+.preview__text {
+  margin-top: 0;
+  margin-left: 0;
+  font-weight: 300;
+  font-size: 1.6vw;
+  line-height: 1.8vw;
+  color: #FFFFFF;
+  text-transform: none;
+
+  //max
+  @media (max-width: 3000px) {
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+  }
+  @media (max-width: 2000px) {
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+  }
+  @media (max-width: 1930px) {
+    font-size: 2.2vw;
+    line-height: 2.5vw;
+  }
+  @media (max-width: 1600px) {
+    font-size: 2vw;
+    line-height: 2vw;
+  }
+  @media (max-width: 1100px) {
+    font-size: 2.2vw;
+    line-height: 2.5vw;
+  }
+  @media (max-width: 700px) {
+    font-size: 3.2vw;
+    line-height: 3vw;
+  }
+  @media (max-width: 500px) {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+  @media (max-width: 400px) {
+    font-size: 4.4vw;
+    line-height: 6vw;
+  }
+}
+
+.preview__down {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 10;
+  display: block;
+  border-top: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 51px solid $yellow;
+  transform: translate(-50%);
+  cursor: pointer;
+
+  @media (max-width: 1100px) {
+    display: none;
+  }
+}
+
+.icon-V-Stroke:before {
+  position: absolute;
+  top: 27px;
+  left: -12px;
+  font-size: 15px;
+  color: $background;
+}
