@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'LIBRARY 3 AM soft';
+    src: local('LIBRARY 3 AM soft'), local('LIBRARY3AMsoft'), url('Library3amsoft.woff2') format('woff2'), url('Library3amsoft.woff') format('woff'), url('Library3amsoft.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
